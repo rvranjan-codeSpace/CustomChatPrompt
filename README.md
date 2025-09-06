@@ -41,19 +41,7 @@ A sophisticated chat participant that analyzes natural language queries and conv
 └── README.md
 ```
 
-## Usage
 
-1. Start the API server:
-   ```bash
-   uvicorn src.jql_analyzer.api:app --reload
-   ```
-
-2. Send a POST request to `/analyze`:
-   ```bash
-   curl -X POST "http://localhost:8000/analyze" \
-        -H "Content-Type: application/json" \
-        -d '{"text": "show me all high priority bugs assigned to me"}'
-   ```
 
 ## Environment Variables
 
@@ -66,10 +54,4 @@ A sophisticated chat participant that analyzes natural language queries and conv
 
 Place your JIRA documentation and JQL cheat sheets in the `data/docs` directory. The system will automatically index and use them for the RAG system.
 
-## Contributing
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
